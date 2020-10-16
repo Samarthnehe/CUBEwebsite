@@ -2,8 +2,21 @@
 *{
   font-family: 'Montserrat', sans-serif;
 }
+body{
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
 html{
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  overflow-x: hidden;
 }
 body {
   background-color: black;
@@ -14,8 +27,21 @@ body {
   padding-bottom: 10px;
   
 }
+body > div.top-view > div > div.text > h1{
+  color: white;
+}
+h1{
+  font-size: 3em ;
+  font-weight: 600;
+}
 .main{
   padding-top: 15vh;
+}
+.container{
+  margin: 8em auto;
+}
+#arrow{
+  margin: 8em auto;
 }
 #arrow .event{
   display:flex;
@@ -24,14 +50,14 @@ body {
 }
 #arrow .event .card{
   
-    width: 400px;
-    height: 318px;
+    width: 100%;
+    height: 100%;
     background: #000;
     margin:1em
 }
 #arrow .event .card .image{
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: 90%;
   overflow: hidden;
 }
 #arrow .event .card .image img{
@@ -46,8 +72,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%;/*100%*/
-  height: 100%;
+  width: 80%;/*100%*/
+  height: 90%;
   background: rgb(96, 86, 158);
   transition: .5s;
   transform-origin: left;
@@ -105,7 +131,9 @@ body {
 #arrow .event .card .details .center ul li a:hover {
   background: #ff3636;
 }
-
+ul{
+  padding: 0;
+}
 
 #arrow > div > div.card1 img{
   margin: 0 auto;
@@ -118,6 +146,10 @@ h1,h2,h3,h4,p{
 }
 div{
   display: block;
+}
+.fa-lg{
+  color: white;
+  margin: 0.5em;
 }
 .navbar-scrolled{
   box-shadow:0px 0px 10px 0px rgb(96, 86, 158);
@@ -175,11 +207,13 @@ i.icon{
 .flex{
   display: flex;
   justify-content: space-around;
-  padding: 3em 9em;
+  padding: 0 9em;
+  flex-wrap: wrap;
   
 }
 .flex1{
   display: flex;
+  flex-wrap: wrap;
 }
 .container .flex1 .desc{
   text-align: center;
@@ -204,10 +238,11 @@ body > div > div:nth-child(2) > div > div:nth-child(2) > p:nth-child(3),body > d
 
 .flex .domain{
   max-width: 22em;
+  min-width: 20em;
   background-color: rgb(10, 10, 10);
   display: flex;
   flex-direction: column;
-  margin: 2px;
+  margin: 2em 0;
   padding: 3em 1.5em 1.5em 1.5em;
   box-shadow: 1px 1px #00000069;
   color: white;
@@ -245,12 +280,15 @@ body > div.video > div > video{
   display: block;
   border-radius: 5px;
   border: 0.5px solid rgb(85, 84, 84);
+  width: 500px;
 }
 .video{
   background-image: url(know.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;padding-top: 4em ;
+  padding-bottom: 3em;
  
 }
 .aboutus{
@@ -287,12 +325,12 @@ body > div.video > div > video{
 .board .board_peep .row .ok h2{
   font-weight: 400;
 }
-
 .board .board_peep .row .ok .member:hover{
-  box-shadow: 0px 0px 9px 4px rgba(96, 86, 158,0.6);
-
+  transform: scale(1.1);
+  box-shadow:0px 0px 9px 4px rgb(96, 86, 158);
+  transition: all 0.3s ease-in-out;
+  
 }
-
 .abouts{
   margin: 7em 0;
   min-height: 100vh;
@@ -363,6 +401,15 @@ body > div.container.aboutus > div > p.dash{
   z-index: 0;
   width: 100%;
   
+}
+#arrow > div > div > h1{
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+body > div.video > div > h1{
+  font-size: 3em;
+  font-weight: 600;
 }
 .top-view .hero .text{
   z-index: 9;
@@ -473,4 +520,107 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 768px){
+  #arrow > div > div > p:nth-child(3){
+    font-size: medium;
+    text-align: justify;
+  }
+  #arrow{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  
+  
+  .top-view .hero .text{
+      z-index: 9;
+      position: absolute;
+      left: 0;
+      color: white;
+      padding: 2em;
+    
+  }
+  body > div.video > div > h1{
+    font-size: 2em;
+    font-weight: 600;
+  }
+  .video{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  body > div.video > div > video{
+    width: 300px;
+  }
+  h1{
+    font-size: 2.5em;
+    font-weight: 800;
+    color:rgb(96, 86, 158)
+  }
+  
+  .dash,.dash1{
+    display: none;
+  }
+  .flex .domain h1{
+    font-weight: 600;
+    margin: 10px 10px 5px 10px;
+    font-size: 1.5em;
+  }
+  .top-view{
+    padding-top: 1.5em;
+  }
+  .top-view .hero{
+    padding-top: 0em;
+  }
+  .top-view .hero .text1{
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    padding-top: 1.5em;
+  }
+  .top-view .hero .text1 h1{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 1em;
+  }
+  .top-view .hero .text1 .demo{
+    font-size: 1.3em;
+    text-align: center;
+  }
+  #arrow > div > div > h1{
+    font-size: 2.5em;
+    font-weight: 800;
+  }
+  #navbarToggle > div:nth-child(2){
+    text-align: center;
+  }
+  #arrow{
+    margin: 4em auto;
+  }
+  .container .flex1 .desc{
+    margin-bottom: 1.5em;
+  }
+  .container{
+    margin: 4em auto;
+  }
+  footer{
+    
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+  .container.footer{
+    margin: 0em auto;
+  }
+  .board .board_peep .row .ok h2{
+    font-size: 1.5rem;
+  }
+  #arrow .event .card{
+  
+    width: 100%;
+    height: 100%;
+    background: #000;
+    margin:1em auto;
+}
+
 }

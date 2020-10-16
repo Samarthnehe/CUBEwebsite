@@ -8,9 +8,11 @@
     <script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type=" text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     {% if title %}
         <title>C.U.B.E VIT - {{ title }}</title>
@@ -19,9 +21,9 @@
     {% endif %}
 </head>
 <body>
-    <header class="site-header">
+    
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand mr-8" href="/" style="font-weight: 600;">C.U.B.E VIT</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,24 +43,24 @@
           </div>
         </div>
       </nav>
-    </header>
+   
     {% block content %}
     {% endblock content %}
     <footer id="contact" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="container">
+        <div class="container footer">
           <ul class="footer">
             <h2>CONTACT US</h2>
             <p class="dash" style="width: 13em;"></p>
-            <div style="margin-top: 2em;padding-bottom: 40px;">
+            <div style="margin-top: 2em;padding-bottom: 20px;">
               <li>vitcubeclub@gmail.com</li>
               <li>+91 6303618891</li>
             </div>
             <div style="display: flex;justify-content: center;">
               
-                <i class="facebook f icon"></i>
-                <i class="instagram icon"></i>
-                <i class="linkedin icon"></i>
-                <i class="youtube icon"></i>
+              <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+              <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
               
             </div>
            
@@ -84,7 +86,7 @@
       crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="semantic/dist/semantic.min.js"></script>
+     
       <script src="{{ url_for('static', filename='main.js') }}"></script>
       <script src="{{ url_for('static', filename='main1.js') }}"></script>
     
