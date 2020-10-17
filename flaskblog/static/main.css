@@ -218,10 +218,10 @@ i.icon{
 .flex1{
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 .container .flex1 .desc{
   text-align: center;
-  flex: 50%;
   padding: 0 1em;
   width: 500px;
   height: 300px;
@@ -230,6 +230,7 @@ i.icon{
 .container .flex1 .desc img{
   width: 100%;
   height: 90%;
+  border-radius: 5px;
 }
 .container .flex1 .desc h1{
   font-size: 2.5em;
