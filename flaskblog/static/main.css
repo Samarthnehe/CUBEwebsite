@@ -222,7 +222,7 @@ i.icon{
 .container .flex1 .desc{
   text-align: center;
   flex: 50%;
-  padding: 0 2em;
+  padding: 0 1em;
   width: 500px;
   height: 300px;
 
@@ -638,7 +638,7 @@ a.article-title:hover {
     margin:1em auto;
 }
 .container .flex1 .desc.text{
-  min-height: 90vh;
+  min-height: 60vh;
 }
 #down-arrow{
   bottom:3vh;
