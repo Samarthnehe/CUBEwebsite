@@ -40,6 +40,9 @@ h1{
 .container{
   margin: 8em auto;
 }
+.container.footer{
+  margin: 0em auto;
+}
 #arrow{
   margin: 8em auto;
 }
