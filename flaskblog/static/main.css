@@ -43,9 +43,7 @@ h1{
 .container.footer{
   margin: 0em auto;
 }
-#arrow{
-  margin: 8em auto;
-}
+
 #arrow .event{
   display:flex;
   flex-wrap: wrap;
