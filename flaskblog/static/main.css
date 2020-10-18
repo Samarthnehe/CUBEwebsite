@@ -218,7 +218,7 @@ i.icon{
 .flex1{
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .container .flex1 .desc{
   text-align: center;
@@ -643,6 +643,11 @@ a.article-title:hover {
 }
 #down-arrow{
   bottom:3vh;
+}
+.flex1{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 }
