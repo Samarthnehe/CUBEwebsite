@@ -142,7 +142,9 @@ ul{
   width:330px;
   height:330px;
 }
-
+.board .board_peep .row .ok h2{
+  font-size: 1.5rem;
+}
 h1,h2,h3,h4,p{
   color: white;
 }
@@ -328,7 +330,7 @@ body > div.video > div > video{
   width: 180px;height: 180px;background-color: grey;border-radius: 50%;margin: 1em auto;
 }
 .board .board_peep .row .ok p{
-  font-weight: 600;font-size: 1.5em;
+  font-weight: 600;font-size: 1.2em;
   color:rgb(96, 86, 158)
 }
 .board .board_peep .row .ok h2{
