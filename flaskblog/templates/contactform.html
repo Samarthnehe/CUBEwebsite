@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+    {% block content %}
+    <div class="container form" >
+       <h1>MESSAGE US</h1>
+       <p class="dash"></p>
+       <div class="container form1" >
+        <form style="color: white;text-align: left;">
+            <div class="form-group mb-2" >
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email</label>
+              <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Phone</label>
+                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+              </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea  class="form-control" rows="7" id="exampleInputPassword1" placeholder="Message"></textarea>
+              </div>
+            <div style="display: flex;justify-content: center;">
+                <button type="submit" class="btn " style="background-color: rgb(96, 86, 158);color:white">Submit</button>
+            </div>
+            
+          </form>
+       </div>
+
+    </div>
+
+    
+    {% endblock content %}

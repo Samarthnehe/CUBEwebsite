@@ -44,7 +44,12 @@ h1{
 .container.footer{
   margin: 0em auto;
 }
-
+.container.form1{
+  padding:50px 100px 50px 100px;background-color: rgb(10,10,10);
+}
+.container.form{
+  padding: 0px 100px 0px 100px;
+}
 #arrow .event{
   display:flex;
   flex-wrap: wrap;
@@ -69,6 +74,13 @@ h1{
 #arrow .event .card:hover .image img {
   opacity: .5;
   transform: translateX(30%);/*100%*/
+}
+.form-control{
+  background-color: rgb(196, 193, 193);
+  
+}
+.form-control::placeholder{
+  color: black;
 }
 #arrow .event .card .details {
   position: absolute;
@@ -239,6 +251,10 @@ i.icon{
   margin-bottom: 0.1em;
   
 }
+.container.form{
+  margin: 2em auto;
+}
+
 .container .flex1 .desc p{
   font-size: medium;
   
@@ -649,6 +665,12 @@ a.article-title:hover {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
+}
+.container.form1{
+  padding:0px;background-color: rgb(10,10,10);
+}
+.container.form{
+  padding: 0px 1.5em;
 }
 
 }

@@ -41,6 +41,10 @@ def event():
 def team():
     return render_template('team.html', title='The Team')
 
+@app.route("/contactform")
+def contform():
+    return render_template('contactform.html', title='ContactForm')
+
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
