@@ -160,6 +160,10 @@ ul{
 h1,h2,h3,h4,p{
   color: white;
 }
+#contact > div > ul > div:nth-child(5) > a:hover{
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
 div{
   display: block;
 }
@@ -204,8 +208,10 @@ i.icon{
 .back{
   background-image:url(aboutus.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
+  image-rendering:crisp-edges;
+
  
 }
 
@@ -232,13 +238,18 @@ i.icon{
   display: flex;
   flex-wrap: wrap;
   min-height: 50vh;
+  align-items: center;
 }
 .container .flex1 .desc{
   text-align: center;
   padding: 0 1em;
   width: 500px;
   height: 300px;
+  padding-top:1.5em;
 
+}
+.container .flex1 .desc.text{
+  padding-top: 1em;
 }
 .container .flex1 .desc img{
   width: 100%;
@@ -309,13 +320,23 @@ body > div.video > div > video{
   border: 0.5px solid rgb(85, 84, 84);
   width: 500px;
 }
+.fa{
+ 
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 4px;
+    border-radius: 50%;
+  
+}
 .video{
   background-image: url(know.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50%;
   text-align: center;padding-top: 4em ;
   padding-bottom: 3em;
+  
  
 }
 .aboutus{
@@ -356,8 +377,26 @@ body > div.video > div > video{
   transform: scale(1.1);
   box-shadow:0px 0px 9px 4px rgb(96, 86, 158);
   transition: all 0.3s ease-in-out;
+
   
 }
+.board .board_peep .row .ok .member:hover .media{
+  visibility: visible;
+}
+.board .board_peep .row .ok .member:hover .media a{
+  margin: 5px;
+}
+.board .board_peep .row .ok .member .media{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 10, 10,0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
 .abouts{
   margin: 7em 0;
   min-height: 100vh;
@@ -574,6 +613,7 @@ a.article-title:hover {
   .video{
     padding-left: 1em;
     padding-right: 1em;
+    background-size: auto;
   }
   body > div.video > div > video{
     width: 300px;
@@ -657,6 +697,7 @@ a.article-title:hover {
 }
 .container .flex1 .desc.text{
   min-height: 60vh;
+  
 }
 #down-arrow{
   bottom:3vh;
