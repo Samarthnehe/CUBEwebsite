@@ -287,6 +287,10 @@ body > div > div:nth-child(2) > div > div:nth-child(2) > p:nth-child(3),body > d
   text-align: center;
 
 }
+.flex .domain .hover{
+  transform: scale(1);
+  transition: ease-in-out all 0.3s;
+}
 .flex .domain .hover:hover{
   transform: scale(1.1);
   transition: ease-in-out all 0.3s;
@@ -365,6 +369,8 @@ body > div.video > div > video{
 } 
 .board .board_peep .row .ok .member{
   width: 180px;height: 180px;background-color: grey;border-radius: 50%;margin: 1em auto;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
 }
 .board .board_peep .row .ok p{
   font-weight: 600;font-size: 1.2em;
