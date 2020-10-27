@@ -160,7 +160,7 @@ ul{
 h1,h2,h3,h4,p{
   color: white;
 }
-#contact > div > ul > div:nth-child(5) > a:hover{
+#contact > div > ul > .links a:hover{
   transform: translateY(-4px);
   transition: 0.3s;
 }
@@ -253,7 +253,7 @@ i.icon{
 }
 .container .flex1 .desc img{
   width: 100%;
-  height: 90%;
+  height: 100%;
   border-radius: 5px;
 }
 .container .flex1 .desc h1{
