@@ -208,7 +208,7 @@ i.icon{
 .back{
   background-image:url(aboutus.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100% 100%;
   background-position: center;
   image-rendering:crisp-edges;
 
@@ -336,7 +336,7 @@ body > div.video > div > video{
 .video{
   background-image: url(know.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: 50%;
   text-align: center;padding-top: 4em ;
   padding-bottom: 3em;
@@ -601,6 +601,7 @@ a.article-title:hover {
   #arrow{
     padding-left: 1em;
     padding-right: 1em;
+    background-size: auto;
   }
   
   
