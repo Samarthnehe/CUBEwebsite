@@ -76,7 +76,7 @@ h1{
   transform: translateX(30%);/*100%*/
 }
 .form-control{
-  background-color: rgb(196, 193, 193);
+  background-color: rgb(255, 255, 255);
   
 }
 .form-control::placeholder{

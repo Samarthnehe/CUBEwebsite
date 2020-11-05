@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     {{fontawesome_html()}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+    <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     {% if title %}
@@ -44,27 +44,27 @@
         </div>
       </nav>
     
-    <div class="container form" >
+    <div class="container form"  >
        <h1>MESSAGE US</h1>
        <p class="dash"></p>
-       <div class="container form1" >
-        <form action="https://formspree.io/f/mqkgqggk" method="POST" style="color: white;text-align: left;">
+       <div class="container form1" style="margin:3em auto">
+        <form action="https://formspree.io/f/xleonzpa" method="POST" style="color: white;text-align: left;">
             <div class="form-group mb-2" >
               <label for="exampleInputEmail1">Name</label>
-              <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+              <input name="username" type="text" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp" placeholder="Enter Name">
               
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Email</label>
-              <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+              <input name="email" type="email" class="form-control " id="exampleInputPassword1" required placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Phone</label>
-                <input name="phone" type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+                <input name="phone" type="tel" class="form-control" id="exampleInputPassword1" placeholder="Phone" pattern="^[0-9]{10}$" title="Phone number must be of 10 digits">
               </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Message</label>
-                <textarea name="message" class="form-control" rows="7" id="exampleInputPassword1" placeholder="Message"></textarea>
+                <textarea name="message" class="form-control" rows="7" id="exampleInputPassword1" required placeholder="Message"></textarea>
               </div>
             <div style="display: flex;justify-content: center;">
                 <button type="submit" class="btn " style="background-color: rgb(96, 86, 158);color:white">Submit</button>
