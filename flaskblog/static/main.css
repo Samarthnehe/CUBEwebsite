@@ -733,5 +733,13 @@ a.article-title:hover {
 .container.form{
   padding: 0px 1.5em;
 }
+#arrow .event .card .image{
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+#arrow .event .card .details{
+  height: 90%;
+}
 
 }
