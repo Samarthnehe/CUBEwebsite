@@ -24,7 +24,7 @@
     
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand mr-8" href="/" style="padding-top: 0px;padding-bottom: 0px;"><img src="{{url_for('static',filename='cubelogo.png')}}" width="100px"></a>
+          <a class="navbar-brand mr-8" href="/" style="padding-top: 0px;padding-bottom: 0px;"><img src="{{url_for('static',filename='cubelogo.png')}}" width="80px" height="35px"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,7 +38,7 @@
               <a class="nav-item nav-link" href="{{ url_for('about') }}">About Us</a>
               <a class="nav-item nav-link" href="{{ url_for('team') }}">Team</a>
               <a class="nav-item nav-link" href="{{ url_for('event') }}">Events</a>
-              <a class="nav-item nav-link" href="#contact">Contact Us</a>
+              <a class="nav-item nav-link" href="{{ url_for('contform') }}">Contact Us</a>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
             <h2>CONTACT US</h2>
             <p class="dash" style="width: 13em;"></p>
            
-            <div style="margin-bottom: 10px;margin-top: 2em;">
+            <div style="margin-bottom: 1.5em;margin-top: 2em;">
               <a href="{{url_for('contform')}}"><button class="btn" style="background-color: rgb(96, 86, 158);color:white" >Send Message</button></a>
             </div>
             <div class="links" style="display: flex;justify-content: center;">

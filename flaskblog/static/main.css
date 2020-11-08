@@ -39,7 +39,7 @@ h1{
   padding-top: 15vh;
 }
 .container{
-  margin: 8em auto;
+  margin: 4em auto;
 }
 .container.footer{
   margin: 0em auto;
@@ -50,21 +50,23 @@ h1{
 .container.form{
   padding: 0px 100px 0px 100px;
 }
+
 #arrow .event{
   display:flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  justify-content: space-around;
 }
 #arrow .event .card{
   
     width: 100%;
     height: 100%;
     background: #000;
-    margin:1em
+   
 }
 #arrow .event .card .image{
   width: 100%;
-  height: 90%;
+  height: 100%;
   overflow: hidden;
 }
 #arrow .event .card .image img{
@@ -87,7 +89,7 @@ h1{
   top: 0;
   left: 0;
   width: 80%;/*100%*/
-  height: 90%;
+  height: 100%;
   background: rgb(96, 86, 158);
   transition: .5s;
   transform-origin: left;
@@ -121,6 +123,10 @@ h1{
   margin: 10px 0;
   padding: 0;
   color: #ffffff;
+}
+.col-lg-4{
+  padding-left: 25px;
+  padding-right: 25px;
 }
 #arrow .event .card .details .center ul {
   margin: 10px auto 0;
@@ -160,6 +166,9 @@ ul{
 h1,h2,h3,h4,p{
   color: white;
 }
+#contact > div > ul > .links a{
+  padding: 0px 0.5em;
+}
 #contact > div > ul > .links a:hover{
   transform: translateY(-4px);
   transition: 0.3s;
@@ -179,7 +188,7 @@ footer{
   margin-top: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image:url(footer.png);
+  /* background-image:url(footer.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -206,7 +215,7 @@ i.icon{
   font-size: 1.5em;
 }
 .back{
-  background-image:url(aboutus.png);
+  /* background-image:url(aboutus.png); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -247,6 +256,10 @@ i.icon{
   height: 300px;
   padding-top:1.5em;
 
+}
+#navbarToggle > div:nth-child(2) > a{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .container .flex1 .desc.text{
   padding-top: 1em;
@@ -291,7 +304,7 @@ body > div > div:nth-child(2) > div > div:nth-child(2) > p:nth-child(3),body > d
   transform: scale(1);
   transition: ease-in-out all 0.3s;
 }
-.flex .domain .hover:hover{
+.flex .domain:hover {
   transform: scale(1.1);
   transition: ease-in-out all 0.3s;
 }
@@ -334,7 +347,7 @@ body > div.video > div > video{
   
 }
 .video{
-  background-image: url(know.png);
+  /* background-image: url(know.png); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 50%;
@@ -486,9 +499,9 @@ body > div.video > div > h1{
 .top-view .hero .text{
   z-index: 9;
   position: absolute;
-  left: 0;
   color: white;
   padding: 4em;
+  top: 15em;
 }
 .top-view .hero .text1{
   z-index: 9;
