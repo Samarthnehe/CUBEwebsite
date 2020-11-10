@@ -188,7 +188,7 @@ footer{
   margin-top: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
-  /* background-image:url(footer.png); */
+  background-image:url(footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -215,7 +215,7 @@ i.icon{
   font-size: 1.5em;
 }
 .back{
-  /* background-image:url(aboutus.png); */
+  background-image:url(aboutus.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -347,7 +347,7 @@ body > div.video > div > video{
   
 }
 .video{
-  /* background-image: url(know.png); */
+  background-image: url(know.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 50%;
