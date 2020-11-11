@@ -663,6 +663,7 @@ body > div.video > div > h1{
   color: white;
   padding: 4em;
   top: 15em;
+  text-align: center;
 }
 .top-view .hero .text1{
   z-index: 9;
@@ -775,6 +776,10 @@ a.article-title:hover {
   .lappy{
     visibility: hidden;
   }
+  #down-arrow{
+    bottom: 12vh;  
+  
+}
   #arrow > div > div > p:nth-child(3){
     font-size: medium;
     text-align: justify;
@@ -887,9 +892,7 @@ a.article-title:hover {
   min-height: 40vh;
   
 }
-#down-arrow{
-  bottom:3vh;
-}
+
 .flex1{
   display: flex;
   flex-wrap: wrap;
