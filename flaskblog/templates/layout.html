@@ -22,17 +22,17 @@
 </head>
 <body>
     
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top lappy" >
         <div class="container-fluid">
           <a class="navbar-brand mr-8" href="/" style="padding-top: 0px;padding-bottom: 0px;"><img src="{{url_for('static',filename='cubelogo.png')}}" width="80px" height="35px"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
              
             </div>
-            <!-- Navbar Right Side -->
+           
             <div class="navbar-nav">
               <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
               <a class="nav-item nav-link" href="{{ url_for('about') }}">About Us</a>
@@ -40,10 +40,44 @@
               <a class="nav-item nav-link" href="{{ url_for('event') }}">Events</a>
               <a class="nav-item nav-link" href="{{ url_for('contform') }}">Contact Us</a>
             </div>
+            
           </div>
+          
         </div>
       </nav>
-   
+      
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top phone">
+        <div class="container">
+          
+            <a class="navbar-brand mr-8" href="/" style="padding-top: 0px;padding-bottom: 0px;"><img src="{{url_for('static',filename='cubelogo.png')}}" width="80px" height="35px"></a>
+          <button id="burger" class="open-main-nav" onclick="showNav()">
+            <span class="burger"></span>
+            
+          </button>
+          
+          
+          <nav class="main-nav " id="main-nav">
+            <ul>
+              <li>
+                <a href="{{ url_for('home') }}">Home</a>
+              </li>
+              <li>
+                <a href="{{ url_for('about') }}">About</a>
+              </li>
+              <li>
+                <a href="{{ url_for('team') }}">Team</a>
+              </li>
+              <li>
+                <a href="{{ url_for('event') }}">Events</a>
+              </li>
+              <li>
+                <a href="{{ url_for('contform') }}">Contact</a>
+              </li>
+            </ul>
+          </div>
+         
+        </nav>
+      </div>
     {% block content %}
     {% endblock content %}
     <footer id="contact" data-aos="zoom-in" data-aos-duration="1000">
@@ -82,6 +116,7 @@
       <script>
         AOS.init();
       </script>
+    
       <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -91,6 +126,15 @@
      
       <script src="{{ url_for('static', filename='main.js') }}"></script>
       <script src="{{ url_for('static', filename='main1.js') }}"></script>
-    
+      <script>
+     
+          function showNav(){
+            
+            document.getElementById('burger').classList.toggle('is-open');
+            document.getElementById('main-nav').classList.toggle('is-open');
+        }
+          
+         
+      </script>
       </body>
   </html>
