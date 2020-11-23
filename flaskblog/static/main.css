@@ -908,6 +908,7 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
 #navbarToggle > div:nth-child(2) > a{
   padding-left: 1rem;
   padding-right: 1rem;
+  font-weight: 600;
 }
 .container .flex1 .desc.text{
   padding-top: 1em;
