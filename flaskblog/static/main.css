@@ -1395,7 +1395,7 @@ a.article-title:hover {
 }
 .container .flex1 .desc.text{
   min-height: 40vh;
-  
+  height: 100%;
 }
 
 .flex1{
