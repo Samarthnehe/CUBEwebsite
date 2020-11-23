@@ -894,6 +894,7 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
   flex-wrap: wrap;
   min-height: 50vh;
   align-items: center;
+  justify-content:space-between;
 }
 .container .flex1 .desc{
   text-align: center;
@@ -914,6 +915,20 @@ transform: translateY(-12px) translateX(10px) skew(-20deg);
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  transform: scale(1);
+  transition: all 0.3s;
+
+}
+.container .flex1 .desc.second img:hover{
+  box-shadow: 0 0 40px rgba(96, 86, 158,0.9);
+  transform:rotate(-4deg) scale(1.1);
+  transition: all 0.3s;
+}
+.container .flex1 .desc.first img:hover{
+  box-shadow: 0 0 40px rgba(96, 86, 158,0.9);
+  transform:rotate(4deg) scale(1.1);
+  transition: all 0.3s;
+
 }
 .container .flex1 .desc h1{
   font-size: 2.5em;
