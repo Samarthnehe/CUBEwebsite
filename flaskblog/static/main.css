@@ -1166,6 +1166,7 @@ body > div.video > div > h1{
   padding: 4em;
   top: 15em;
   text-align: center;
+  width: 100vw;
 }
 .top-view .hero .text1{
   z-index: 9;
