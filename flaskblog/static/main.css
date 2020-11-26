@@ -166,7 +166,7 @@ body {
   background-color: blue;
 }
 .rubiks-loader .cube .piece.green {
-  background-color: green;
+  background-color: rgb(3, 175, 3);
 }
 .rubiks-loader .cube .piece.white {
   background-color: #e2e8e7;
