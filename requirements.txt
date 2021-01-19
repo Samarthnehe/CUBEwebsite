@@ -54,7 +54,7 @@ future==0.18.2
 gevent==1.4.0
 glob2==0.7
 greenlet==0.4.15
-gunicorn==20.0.4
+gunicorn==19.10.0
 h5py==2.10.0
 HeapDict==1.0.1
 html5lib==1.0.1
