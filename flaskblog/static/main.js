@@ -52,3 +52,50 @@ const map = document.querySelector('#contact')
             map.scrollIntoView({behavior: "smooth", block: "start"});
         }
         });
+window.onload=()=>{
+  // var switcher= document.getElementById("switch");
+  // var toggler2=document.getElementById("toggler2");
+  // var toggler1=document.getElementById("toggler1");
+  
+  // // console.log(switcher);
+  // console.log(toggler1);
+  // toggler2.onclick=()=>{
+  //   document.getElementsByClassName("team")[0].style.display="none";
+  // }
+  // toggler1.onclick=()=>{
+  //   document.getElementsByClassName("team")[1].style.display="none";
+  // }
+  var toggleSwitch = document.getElementById('switch');
+  var toggleContainer = document.getElementById('switch-container');
+  var toggleContainer
+var toggleNumber;
+var t2 = document.getElementsByClassName("team")[1];
+var t1 = document.getElementsByClassName("team")[0];
+
+toggleSwitch.addEventListener('click', function() {
+	toggleNumber = !toggleNumber;
+	if (toggleNumber) {
+		toggleContainer.style.clipPath = 'inset(0 0 0 50%)';
+		toggleContainer.style.backgroundColor = 'rgb(86,96,158)';
+		t1.style.display = "none";
+		//t1.style.visibility = "hidden";
+		// t1.style.clipPath = 'inset(0 0 0 50%)';
+		t2.style.display = "block";
+		//t1.style.visibility = "visible";
+		// t2.style.clipPath = 'inset(0 50% 0 0)';
+		
+	} else {
+		toggleContainer.style.clipPath = 'inset(0 50% 0 0)';
+		toggleContainer.style.backgroundColor = '#5141B0';
+		t1.style.display = "block";
+		//t1.style.visibility = "visible";
+		// t1.style.clipPath = 'inset(0 50% 0 0)';
+		t2.style.display = "none";
+		//t1.style.visibility = "hidden";
+		// t2.style.clipPath = 'inset(0 0 0 50%)';
+	}
+	console.log(toggleNumber)
+});
+
+}
+ 

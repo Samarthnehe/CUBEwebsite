@@ -548,6 +548,9 @@ h1{
 .main{
   padding-top: 15vh;
 }
+.main.team{
+  padding-top: 10vh;
+}
 .container{
   margin: 4em auto;
 }
@@ -574,6 +577,71 @@ h1{
     height: 100%;
     background: #000;
    
+}
+#switch {
+  width: 260px;
+  height: 50px;
+  margin: auto;
+  margin-top: 6vh;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.inner-switch {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  text-transform: uppercase;
+  font-size: 0.65em;
+  letter-spacing: 0.2em;
+}
+
+.inner-switch:first-child {
+  background: rgb(34, 34, 34);
+  color: #e5e5e5;
+}
+
+.inner-switch:nth-child(2) {
+  background: rgb(96, 86, 158);
+  color: #ffffff;
+  clip-path: inset(0 50% 0 0);
+  box-shadow: inset 0px 0px 10px black;
+  transition: 0.3s cubic-bezier(0, 0, 0, 1);
+}
+
+.toggle-switch {
+  width: 50%;
+  position: absolute;
+  height: inherit;
+  display: flex;
+  box-sizing: border-box;
+  
+}
+
+.toggle-switch p {
+  margin: auto;
+}
+
+.toggle-switch:nth-child(1) {
+  right: 0;
+}
+
+.container.main.team.one{
+  clip-path: inset(0 0 0 0);
+  transition: 0.5s cubic-bezier(0, 0, 0, 1);
+ 
+}
+
+.container.main.team.two{
+  clip-path: inset(0 0 0 0);
+  transition: 0.5s cubic-bezier(0, 0, 0, 1);
+  display: none;
 }
 #arrow .event .card .image{
   width: 100%;
@@ -1060,6 +1128,7 @@ body > div.video > div > video{
 .board .board_peep .row{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .board .board_peep .row .ok{
   display: flex;
@@ -1352,7 +1421,7 @@ a.article-title:hover {
     margin: 10px 10px 5px 10px;
     font-size: 1.5em;
   }
- 
+
   .top-view .hero{
     padding-top: 0em;
   }
